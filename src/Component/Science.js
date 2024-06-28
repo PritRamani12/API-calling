@@ -5,6 +5,7 @@ import axios from 'axios'
 
 const Science = ({ category }) => {
     const [apiData, setApiData] = useState([])
+    
     const [search, setSearch] = useState('')
     const URL = `https://newsapi.org/v2/top-headlines?country=us&q=${search}&category=${category}&apiKey=4ed651ea38544fafb64bab4c6f0c9671`
 
