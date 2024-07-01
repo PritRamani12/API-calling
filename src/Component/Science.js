@@ -15,7 +15,6 @@ const Science = ({ category }) => {
     }, [search])
     const getDataAxios = async () => {
         const response = await axios.get(URL).then((res) => res)
-        // console.log(response);
         setApiData(response.data.articles)
     }
 
