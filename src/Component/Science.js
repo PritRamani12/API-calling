@@ -11,7 +11,6 @@ const Science = ({ category }) => {
 
     useEffect(() => {
         getDataAxios()
-        // getApidata()
     }, [search])
     const getDataAxios = async () => {
         const response = await axios.get(URL).then((res) => res)
